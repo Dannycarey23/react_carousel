@@ -1,0 +1,33 @@
+.imageStyles{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.carouselStyles{
+    height: 500px;
+    width: 500px;
+    position: relative;
+}
+
+.leftArrow{
+    position: absolute;
+    top: 50%;
+    color: white;
+    left: 1px;
+    transform: translate(0, -50);
+    font-size: 5vh;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.rightArrow{
+    position: absolute;
+    top: 50%;
+    color: white;
+    right: 1px;
+    transform: translate(0, -50);
+    font-size: 5vh;
+    z-index: 1;
+    cursor: pointer;
+}

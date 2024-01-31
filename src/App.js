@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+import React from 'react'
+import Carousel from './Carousel';
 import './App.css';
+
+const pics = [
+  { url: './images/1.png', title: 'vet1' },
+  { url: './images/2.png', title: 'vet2' },
+  { url: './images/3.png', title: 'vet3' },
+  { url: './images/4.png', title: 'vet4' },
+  { url: './images/5.png', title: 'vet5' },
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='carouselContainer' height="100%">
+      <Carousel pics={pics} />
     </div>
+
+
   );
 }
 
